@@ -2,7 +2,16 @@ import React from 'react';
 
 function SongCard( {song} ){
 
-    const {id, name, artist, album, subGenre, albumPic, youtube, spotify}=song
+    const {
+        id, 
+        name, 
+        artist, 
+        album, 
+        subGenre, 
+        albumPic ="https://cdn1.vectorstock.com/i/thumb-large/50/20/no-photo-or-blank-image-icon-loading-images-vector-37375020.jpg", 
+        youtube, 
+        spotify} 
+    = song
 
     return (
     <div>

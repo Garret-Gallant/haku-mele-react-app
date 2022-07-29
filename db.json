@@ -50,7 +50,7 @@
           "album": "Crush",
           "genre":"Oldies",
           "subGenre": false,
-          "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmm7SF4WJ9gJxsWkemGWta5FKVtrKzWsgxA&usqp=CAU",
+          "albumPic": "https://i.discogs.com/-sbzgk-NNKIOQTX04Rj87YnETmQOFUS7Yw5loP8Gjg4/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDY4/NDY4LTE1MDMyMzg3/ODEtMzc0NC5wbmc.jpeg",
           "youtube": "https://www.youtube.com/watch?v=Yk6HWa4opnQ",
           "spotify": "https://open.spotify.com/track/2svCszTLVUf8K6woN74Svl?si=ee48d7752616491e"
         },
@@ -88,24 +88,13 @@
           "spotify": "https://open.spotify.com/track/67F80H5WZRteT0DNj5VcDO?si=f63a03584d834a53"
         },
         {
-          "id": 1,
-          "name": "",
-          "artist": "",
+          "id": 9,
+          "name": "TEST",
+          "artist": "test",
           "album": "",
           "genre": "",
           "subGenre": "",
-          "albumPic": "",
-          "youtube": "",
-          "spotify": ""
-        },
-        {
-          "id": 2,
-          "name": "",
-          "artist": "",
-          "album": "",
-          "genre": "",
-          "subGenre": "",
-          "albumPic": "",
+          
           "youtube": "",
           "spotify": ""
         }
