@@ -1,148 +1,113 @@
 {
-    "songs": {
-            "Jazz": 
-        [
-            {
-                "id": 1,
-                "name": "Cheek to Cheek",
-                "artist": "Tony Bennett and Lady Gaga",
-                "album": "Cheek to Cheek",
-                "subGenre": false,
-                "albumPic": "https://upload.wikimedia.org/wikipedia/en/e/e3/Tony_Bennett_and_Lady_Gaga_-_Cheek_to_Cheek.png",
-                "youtube": "https://www.youtube.com/watch?v=G46O8YiLHXI",
-                "spotify": "https://open.spotify.com/track/0UuRIovHyU6KeTzY4gS0L2?si=0847fcd047a14063"
-            },
-            {
-                "id": 2,
-                "name": "Fever",
-                "artist": "Peggy Lee",
-                "album": "Cheek to Cheek",
-                "subGenre": false,
-                "albumPic": "https://m.media-amazon.com/images/I/71LHmKpohxL._SS500_.jpg",
-                "youtube": "https://www.youtube.com/watch?v=REryc1TpeY8",
-                "spotify": "https://open.spotify.com/track/3aPlQWU07jGgyHaBHVS5TS?si=8d2db650cc4140d8"
-            }
-        ],
-            "Metal": 
-        [
-            {
-                "id": 1,
-                "name": "Blackbear",
-                "artist": "Whitechapel",
-                "album": "The Valley",
-                "subGenre": "Deathcore", 
-                "albumPic": "https://m.media-amazon.com/images/I/71zRyp9l0aL._SL1200_.jpg",
-                "youtube": "https://www.youtube.com/watch?v=X7pvYfWD1P0",
-                "spotify": "https://open.spotify.com/track/1K2AsxGzMyms8ft8m62jVd"
-            },
-            {
-                "id": 2,
-                "name": "27",
-                "artist": "Make Them Suffer",
-                "album": "Single Track",
-                "subGenre": "Melodic Deathcore",
-                "albumPic": "https://images.genius.com/1fba2ad360e5d7b72ed77bcd8324049a.640x640x1.jpg",
-                "youtube": "https://www.youtube.com/watch?v=by2p155voaU",
-                "spotify": "https://open.spotify.com/track/3a4vinxBf5uT8Sb8wCoFz9?si=cbb930b98aa146e6"
-            }
-        ],
-        "Oldies": 
-        [
-            {
-                "id": 1,
-                "name": "Captain Crash & The Beauty Queen From Mars",
-                "artist": "Bon Jovi",
-                "album": "Crush",
-                "subGenre": false, 
-                "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmm7SF4WJ9gJxsWkemGWta5FKVtrKzWsgxA&usqp=CAU",
-                "youtube": "https://www.youtube.com/watch?v=Yk6HWa4opnQ",
-                "spotify": "https://open.spotify.com/track/2svCszTLVUf8K6woN74Svl?si=ee48d7752616491e"
-            },
-            {
-                "id": 2,
-                "name": "Lovin', Touchin', Squeezin'",
-                "artist": "Journey",
-                "album": "Evolution",
-                "subGenre": false,
-                "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PEAaTRKU-x2jFid4qbnBpXXl6xDMx_lhuA&usqp=CAU",
-                "youtube": "https://www.youtube.com/watch?v=fTkHFQC3wow",
-                "spotify": "https://open.spotify.com/track/0VQ0n5gMgJLNixG8BfWBT5?si=28469750ae0a498a"
-            }
-        ],
-        "LoFi": 
-        [
-            {
-                "id": 1,
-                "name": "A Day Off",
-                "artist": "Nishnu",
-                "album": "DAYDREAMING",
-                "subGenre": false, 
-                "albumPic": "https://i.scdn.co/image/ab67616d0000b273c1b158e04750ee3956e20854",
-                "youtube": false,
-                "spotify": "https://open.spotify.com/track/51FLSS3BNosbOEtz5tst6f?si=e2305628dd16413d"
-            },
-            {
-                "id": 2,
-                "name": "Evergarden",
-                "artist": "Osaki",
-                "album": "Evergarden",
-                "subGenre": false,
-                "albumPic": "https://f4.bcbits.com/img/a2764338842_10.jpg",
-                "youtube": "https://www.youtube.com/watch?v=d7L-clHMr40",
-                "spotify": "https://open.spotify.com/track/67F80H5WZRteT0DNj5VcDO?si=f63a03584d834a53"
-            }
-        ],
-        "Genre": 
-        [
-            {
-                "id": 1,
-                "name": "",
-                "artist": "",
-                "album": "",
-                "subGenre": "", 
-                "albumPic": "",
-                "youtube": "",
-                "spotify": ""
-            },
-            {
-                "id": 2,
-                "name": "",
-                "artist": "",
-                "album": "",
-                "subGenre": "",
-                "albumPic": "",
-                "youtube": "",
-                "spotify": ""
-            }
-        ],
-        "NextGenre": 
-        [
-            {
-                "id": 1,
-                "name": "",
-                "artist": "",
-                "album": "",
-                "subGenre": "", 
-                "albumPic": "",
-                "youtube": "",
-                "spotify": ""
-            },
-            {
-               "id": 2,
-                "name": "",
-                "artist": "",
-                "album": "",
-                "subGenre": "",
-                "albumPic": "",
-                "youtube": "",
-                "spotify": ""
-            }
-        ]
-    }
+    "songs": [
+        {
+          "id": 1,
+          "name": "Cheek to Cheek",
+          "artist": "Tony Bennett and Lady Gaga",
+          "album": "Cheek to Cheek",
+          "genre":"Jazz",
+          "subGenre": false,
+          "albumPic": "https://upload.wikimedia.org/wikipedia/en/e/e3/Tony_Bennett_and_Lady_Gaga_-_Cheek_to_Cheek.png",
+          "youtube": "https://www.youtube.com/watch?v=G46O8YiLHXI",
+          "spotify": "https://open.spotify.com/track/0UuRIovHyU6KeTzY4gS0L2?si=0847fcd047a14063"
+        },
+        {
+          "id": 2,
+          "name": "Fever",
+          "artist": "Peggy Lee",
+          "album": "Cheek to Cheek",
+          "subGenre": false,
+          "albumPic": "https://m.media-amazon.com/images/I/71LHmKpohxL._SS500_.jpg",
+          "youtube": "https://www.youtube.com/watch?v=REryc1TpeY8",
+          "spotify": "https://open.spotify.com/track/3aPlQWU07jGgyHaBHVS5TS?si=8d2db650cc4140d8"
+        },
+        {
+          "id": 3,
+          "name": "Blackbear",
+          "artist": "Whitechapel",
+          "album": "The Valley",
+          "genre":"Metal",
+          "subGenre": "Deathcore",
+          "albumPic": "https://m.media-amazon.com/images/I/71zRyp9l0aL._SL1200_.jpg",
+          "youtube": "https://www.youtube.com/watch?v=X7pvYfWD1P0",
+          "spotify": "https://open.spotify.com/track/1K2AsxGzMyms8ft8m62jVd"
+        },
+        {
+          "id": 4,
+          "name": "27",
+          "artist": "Make Them Suffer",
+          "album": "Single Track",
+          "genre":"Metal",
+          "subGenre": "Melodic Deathcore",
+          "albumPic": "https://images.genius.com/1fba2ad360e5d7b72ed77bcd8324049a.640x640x1.jpg",
+          "youtube": "https://www.youtube.com/watch?v=by2p155voaU",
+          "spotify": "https://open.spotify.com/track/3a4vinxBf5uT8Sb8wCoFz9?si=cbb930b98aa146e6"
+        },
+        {
+          "id": 5,
+          "name": "Captain Crash & The Beauty Queen From Mars",
+          "artist": "Bon Jovi",
+          "album": "Crush",
+          "genre":"Oldies",
+          "subGenre": false,
+          "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmm7SF4WJ9gJxsWkemGWta5FKVtrKzWsgxA&usqp=CAU",
+          "youtube": "https://www.youtube.com/watch?v=Yk6HWa4opnQ",
+          "spotify": "https://open.spotify.com/track/2svCszTLVUf8K6woN74Svl?si=ee48d7752616491e"
+        },
+        {
+          "id": 6,
+          "name": "Lovin', Touchin', Squeezin'",
+          "artist": "Journey",
+          "album": "Evolution",
+          "genre":"Oldies",
+          "subGenre": false,
+          "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PEAaTRKU-x2jFid4qbnBpXXl6xDMx_lhuA&usqp=CAU",
+          "youtube": "https://www.youtube.com/watch?v=fTkHFQC3wow",
+          "spotify": "https://open.spotify.com/track/0VQ0n5gMgJLNixG8BfWBT5?si=28469750ae0a498a"
+        },
+        {
+          "id": 7,
+          "name": "A Day Off",
+          "artist": "Nishnu",
+          "album": "DAYDREAMING",
+          "genre":"LoFi",
+          "subGenre": false,
+          "albumPic": "https://i.scdn.co/image/ab67616d0000b273c1b158e04750ee3956e20854",
+          "youtube": false,
+          "spotify": "https://open.spotify.com/track/51FLSS3BNosbOEtz5tst6f?si=e2305628dd16413d"
+        },
+        {
+          "id": 8,
+          "name": "Evergarden",
+          "artist": "Osaki",
+          "album": "Evergarden",
+          "genre":"LoFi",
+          "subGenre": false,
+          "albumPic": "https://f4.bcbits.com/img/a2764338842_10.jpg",
+          "youtube": "https://www.youtube.com/watch?v=d7L-clHMr40",
+          "spotify": "https://open.spotify.com/track/67F80H5WZRteT0DNj5VcDO?si=f63a03584d834a53"
+        },
+        {
+          "id": 1,
+          "name": "",
+          "artist": "",
+          "album": "",
+          "genre": "",
+          "subGenre": "",
+          "albumPic": "",
+          "youtube": "",
+          "spotify": ""
+        },
+        {
+          "id": 2,
+          "name": "",
+          "artist": "",
+          "album": "",
+          "genre": "",
+          "subGenre": "",
+          "albumPic": "",
+          "youtube": "",
+          "spotify": ""
+        }
+    ]
 }
-
-
-
-
-
-

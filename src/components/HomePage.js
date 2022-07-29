@@ -13,14 +13,12 @@ function HomePage() {
         .then((res) => res.json())
         .then((songData) => setSongs(songData));
     }, []);
-  
-    console.log(songs)
 
   return (
     <div>
       <NavBar />
       <SongForm />
-      <SongCollection />
+      <SongCollection songs={songs}/>
       <SongPage />
     </div>
   );

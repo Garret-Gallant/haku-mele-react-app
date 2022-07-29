@@ -1,19 +1,22 @@
 import React from 'react';
 
-function SongCard(){
+function SongCard( {song} ){
+
+    const {id, name, artist, album, subGenre, albumPic, youtube, spotify}=song
+
     return (
     <div>
         <div>
         <div className="image">
-          <img src="placeholder" alt="placeholder" />
+          <img src={albumPic} alt="Album Image" />
         </div>
-        <h3>Name of Song</h3>
+        <h3>{name}</h3>
         <div className="extra content">
-            <h3>artist</h3>
-            <h3>album</h3>
-            <h3>albumPic</h3>
-            <h3>youtube</h3>
-            <h3>spotify</h3>  
+            <h3>{artist}</h3>
+            <h3>{album}</h3>
+            <h3>{subGenre}</h3>
+            <href src={youtube}/>
+            <href src={spotify} />
         </div>
       </div>
     </div>
