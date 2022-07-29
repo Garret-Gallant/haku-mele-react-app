@@ -2,10 +2,8 @@ import React, {useEffect, useState} from 'react';
 import HomePage from './HomePage';
 
 
-function App() 
-{
-  
-  
+function App() {
+
   return (
     <div className="App">
       <HomePage />
