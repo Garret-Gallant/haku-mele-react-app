@@ -26,8 +26,9 @@ function HomePage() {
 
   return (
     <div>
-      <NavBar songs={songs}/>
+      <img id="logo" src={require("../images/logo.png")} alt="Logo" height="150"/>
       <SongForm />
+      <NavBar />
       <SongCollection songs={songs}/>
       <SongPage />
     </div>

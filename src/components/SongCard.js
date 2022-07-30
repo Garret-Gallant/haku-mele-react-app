@@ -9,7 +9,7 @@ function SongCard( {song} ){
         album, 
         genre,
         subGenre, 
-        albumPic = "https://cdn1.vectorstock.com/i/thumb-large/50/20/no-photo-or-blank-image-icon-loading-images-vector-37375020.jpg", 
+        albumPic, 
         youtube, 
         spotify} 
     = song
@@ -17,7 +17,7 @@ function SongCard( {song} ){
     return (
     <div className='card' text-align='center'>
         <div className="image" text-align='center'>
-          <img position='relative' height='350' width='350' src={albumPic} alt="Album Image" />
+          <img position='relative' height='350' width='350' src={albumPic ? albumPic : require("../images/noImage.jpeg")} alt={album} />
         </div>
         <h1>{name}</h1>
         <div className='card-content'>
@@ -25,9 +25,9 @@ function SongCard( {song} ){
             <h3>Album: {album}</h3>
             {genre ? <h3>Genre: {genre}</h3> : null}
             {subGenre ? <h3>Sub-Genre: {subGenre}</h3> : null}
-            <a href={youtube} className='button'>Youtube</a>
+            <br></br>
+            <a className='button' href={youtube}>Youtube</a>
             <a className='button' href={spotify}>Spotify</a> 
-            
         </div>
     </div>
     )

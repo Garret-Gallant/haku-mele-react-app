@@ -16,6 +16,7 @@
           "name": "Fever",
           "artist": "Peggy Lee",
           "album": "Cheek to Cheek",
+          "genre":"Jazz",
           "subGenre": false,
           "albumPic": "https://m.media-amazon.com/images/I/71LHmKpohxL._SS500_.jpg",
           "youtube": "https://www.youtube.com/watch?v=REryc1TpeY8",
@@ -91,7 +92,7 @@
           "id": 9,
           "name": "TEST",
           "artist": "test",
-          "album": "",
+          "album": "testtest",
           "genre": "",
           "subGenre": "",
           
