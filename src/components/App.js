@@ -5,6 +5,16 @@ import SongForm from "./SongForm";
 import RandomSong from './RandomSong';
 import SongCollection from "./SongCollection";
 
+//Goals
+//look into bootstrap for styling
+//get random render function for a single card
+//add links and routes for a more dynamic render stlye
+//add a search function to be filtered by genre, artist, etc.
+//like function => favorites page
+//pages we want: 
+//all songs, random songs, add a song, about, favorites
+//👍 
+
 function App() {
 
   const [songs, setSongs] = useState([])
