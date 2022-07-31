@@ -33,6 +33,7 @@ form{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-decoration: none;
 }
 
 .button:before {
@@ -125,6 +126,16 @@ form{
 
 h1 {
   overflow-wrap: break-word;
+}
+
+.song-form {
+  margin-top: 5%;
+}
+
+.random-song {
+  text-align: center;
+  position: relative;
+  margin-top: 2%;
 }
 
 
