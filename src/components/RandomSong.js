@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useInsertionEffect } from "react";
+import SongCard from "./SongCard";
 
-function RandomSong() {
+function RandomSong({ songs, handleFavoriteSong }) {
+  console.log(songs);
+
+  function getRandomSong(){
+   let randomSong = songs[Math.floor(Math.random() * songs.length)];
+   console.log(randomSong);
+  }
+
   return (
-    <div className='random-song'>
+    <div className="holder">
+    <div className="random-song">
       <label>Pick a Genre: </label>
       <select>
         <option value="metal">Metal</option>
@@ -19,8 +28,10 @@ function RandomSong() {
         <option value="k-pop">K-Pop</option>
         <option value="country">Country</option>
       </select>
-      <button>Generate a Random Song!</button>
+      <button onClick={getRandomSong}>Generate a Random Song!</button>
     </div>
+    </div>
+
   );
 }
 

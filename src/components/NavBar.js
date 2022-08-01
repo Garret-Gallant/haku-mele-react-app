@@ -5,25 +5,39 @@ function NavBar( { setSearchQuery } ) {
 
   return (
     <div className='nav-bar'>
-      <NavLink to="/">
-        <img id="logo" src={require("../images/logo.png")} alt="Logo" height="150" />
-      </NavLink>
-      <input onChange={((e) => setSearchQuery(e.target.value))} className='button' type='text' placeholder='Search a song' />
-      <NavLink className='button' to="/">
-        All Songs
-      </NavLink>
-      <NavLink className='button' to="/add-song">
-        Add A New Song
-      </NavLink>
-      <NavLink className='button' to="/random-song">
-        Random Song Generator
-      </NavLink>
-      <NavLink className='button' to="/favorites">
-        Favorites
-      </NavLink>
-      <NavLink className='button' to="/about">
-        About
-      </NavLink>
+      <div className="sidebar">
+        <NavLink to="/">
+          <img id="logo" src={require("../images/logo.png")} alt="Logo" height="100" />
+        </NavLink>
+          <input onChange={((e) => setSearchQuery(e.target.value))} className='button' type='text' placeholder='Search a song' />
+        <li>
+        <ul>
+          <NavLink className='navbutton' to="/">
+            All Songs
+          </NavLink>
+        </ul>
+        <ul>
+          <NavLink className='navbutton' to="/add-song">
+            Add A New Song
+          </NavLink>
+        </ul>
+        <ul>
+          <NavLink className='navbutton' to="/random-song">
+            Random Song Generator
+          </NavLink>
+        </ul>
+        <ul>
+          <NavLink className='navbutton' to="/favorites">
+            Favorites
+          </NavLink>
+        </ul>
+        <ul>
+          <NavLink className='navbutton' to="/about">
+            About
+          </NavLink>
+        </ul>
+      </li>
+      </div>
     </div>
   );
 }

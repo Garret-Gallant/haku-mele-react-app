@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <>
-      <h1 text-align="center">About the Devs</h1>
+    <div className="holder" id="about">
+      <h1>About the Devs</h1>
       <br />
       <div className="about-cards">
         <div className="card">
@@ -35,7 +35,7 @@ function About() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -55,6 +55,8 @@ function App() {
     setSongs(songs=>{return[...songs, newSong]})
   }
 
+  //https://api.discogs.com/releases
+
   useEffect(() => {
     fetch("http://localhost:4000/songs")
       .then((res) => res.json())
@@ -76,7 +78,7 @@ function App() {
         <SongForm formData={formData} setFormData={setFormData} addSong={addSong} />
       </Route>
       <Route path="/random-song">
-        <RandomSong />
+        <RandomSong songs={songs} handleFavoriteSong={handleFavoriteSong} />
       </Route>
       <Route path="/favorites">
           <Favorites songs={songs} setSongs={setSongs} />

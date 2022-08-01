@@ -3,7 +3,7 @@ import SongCard from "./SongCard";
 
 
 function SongCollection({ handleFavoriteSong, songs, setSongs }) {
-  return (
+  return (<div className="holder">
     <div className="cards">
       {songs.map((song) => (
         <SongCard
@@ -12,6 +12,7 @@ function SongCollection({ handleFavoriteSong, songs, setSongs }) {
           song={song}
         />
       ))}
+    </div>
     </div>
   );
 }

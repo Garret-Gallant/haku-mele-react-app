@@ -15,11 +15,10 @@ function SongCard({ handleFavoriteSong, song }) {
     favorite,
   } = song;
 
-  const [isFavorite, setIsFavorite] = useState(false);
 
+//wait a sec I think i got something
+//for the random gen?
   function flipFavorite(){
-    setIsFavorite((isFavorite) => !isFavorite)
-
     const favoriteObj = {
         favorite: (song.favorite = !favorite),
       };

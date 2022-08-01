@@ -51,9 +51,9 @@ function SongForm({formData, setFormData, addSong})
   }
 
   return (
+    <div className="holder">
     <div>
-      {/* <h4>Add a song!<h4> */}
-      <Form className="ui fluid form">
+      <Form className="formBox">
         <h1>Add a Song</h1>
         <Form.Group widths="equal">
           <Form.Input label="Song Name" name="name" value={name} onChange={handleChange}/>
@@ -75,6 +75,7 @@ function SongForm({formData, setFormData, addSong})
         </Form.Group>
         <Form.Button onClick={handleSubmit}>Submit</Form.Button>
       </Form>
+    </div>
     </div>
   );
 }
