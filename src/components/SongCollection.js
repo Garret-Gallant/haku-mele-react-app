@@ -1,13 +1,17 @@
 import React from "react";
-import SongCard from './SongCard';
-
-function SongCollection({ songs })
-{
+import SongCard from "./SongCard";
 
 
+function SongCollection({ handleFavoriteSong, songs, setSongs }) {
   return (
-    <div className='cards'>
-        {songs.map((song) => <SongCard key={song.id} song={song} />)}
+    <div className="cards">
+      {songs.map((song) => (
+        <SongCard
+          key={song.id}
+          handleFavoriteSong={handleFavoriteSong}
+          song={song}
+        />
+      ))}
     </div>
   );
 }

@@ -1,103 +1,208 @@
 {
-    "songs": [
-        {
-          "id": 1,
-          "name": "Cheek to Cheek",
-          "artist": "Tony Bennett and Lady Gaga",
-          "album": "Cheek to Cheek",
-          "genre":"Jazz",
-          "subGenre": false,
-          "albumPic": "https://upload.wikimedia.org/wikipedia/en/e/e3/Tony_Bennett_and_Lady_Gaga_-_Cheek_to_Cheek.png",
-          "youtube": "https://www.youtube.com/watch?v=G46O8YiLHXI",
-          "spotify": "https://open.spotify.com/track/0UuRIovHyU6KeTzY4gS0L2?si=0847fcd047a14063"
-        },
-        {
-          "id": 2,
-          "name": "Fever",
-          "artist": "Peggy Lee",
-          "album": "Cheek to Cheek",
-          "genre":"Jazz",
-          "subGenre": false,
-          "albumPic": "https://m.media-amazon.com/images/I/71LHmKpohxL._SS500_.jpg",
-          "youtube": "https://www.youtube.com/watch?v=REryc1TpeY8",
-          "spotify": "https://open.spotify.com/track/3aPlQWU07jGgyHaBHVS5TS?si=8d2db650cc4140d8"
-        },
-        {
-          "id": 3,
-          "name": "Blackbear",
-          "artist": "Whitechapel",
-          "album": "The Valley",
-          "genre":"Metal",
-          "subGenre": "Deathcore",
-          "albumPic": "https://m.media-amazon.com/images/I/71zRyp9l0aL._SL1200_.jpg",
-          "youtube": "https://www.youtube.com/watch?v=X7pvYfWD1P0",
-          "spotify": "https://open.spotify.com/track/1K2AsxGzMyms8ft8m62jVd"
-        },
-        {
-          "id": 4,
-          "name": "27",
-          "artist": "Make Them Suffer",
-          "album": "Single Track",
-          "genre":"Metal",
-          "subGenre": "Melodic Deathcore",
-          "albumPic": "https://images.genius.com/1fba2ad360e5d7b72ed77bcd8324049a.640x640x1.jpg",
-          "youtube": "https://www.youtube.com/watch?v=by2p155voaU",
-          "spotify": "https://open.spotify.com/track/3a4vinxBf5uT8Sb8wCoFz9?si=cbb930b98aa146e6"
-        },
-        {
-          "id": 5,
-          "name": "Captain Crash & The Beauty Queen From Mars",
-          "artist": "Bon Jovi",
-          "album": "Crush",
-          "genre":"Oldies",
-          "subGenre": false,
-          "albumPic": "https://i.discogs.com/-sbzgk-NNKIOQTX04Rj87YnETmQOFUS7Yw5loP8Gjg4/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDY4/NDY4LTE1MDMyMzg3/ODEtMzc0NC5wbmc.jpeg",
-          "youtube": "https://www.youtube.com/watch?v=Yk6HWa4opnQ",
-          "spotify": "https://open.spotify.com/track/2svCszTLVUf8K6woN74Svl?si=ee48d7752616491e"
-        },
-        {
-          "id": 6,
-          "name": "Lovin', Touchin', Squeezin'",
-          "artist": "Journey",
-          "album": "Evolution",
-          "genre":"Oldies",
-          "subGenre": false,
-          "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PEAaTRKU-x2jFid4qbnBpXXl6xDMx_lhuA&usqp=CAU",
-          "youtube": "https://www.youtube.com/watch?v=fTkHFQC3wow",
-          "spotify": "https://open.spotify.com/track/0VQ0n5gMgJLNixG8BfWBT5?si=28469750ae0a498a"
-        },
-        {
-          "id": 7,
-          "name": "A Day Off",
-          "artist": "Nishnu",
-          "album": "DAYDREAMING",
-          "genre":"LoFi",
-          "subGenre": false,
-          "albumPic": "https://i.scdn.co/image/ab67616d0000b273c1b158e04750ee3956e20854",
-          "youtube": false,
-          "spotify": "https://open.spotify.com/track/51FLSS3BNosbOEtz5tst6f?si=e2305628dd16413d"
-        },
-        {
-          "id": 8,
-          "name": "Evergarden",
-          "artist": "Osaki",
-          "album": "Evergarden",
-          "genre":"LoFi",
-          "subGenre": false,
-          "albumPic": "https://f4.bcbits.com/img/a2764338842_10.jpg",
-          "youtube": "https://www.youtube.com/watch?v=d7L-clHMr40",
-          "spotify": "https://open.spotify.com/track/67F80H5WZRteT0DNj5VcDO?si=f63a03584d834a53"
-        },
-        {
-          "id": 9,
-          "name": "TEST",
-          "artist": "test",
-          "album": "testtest",
-          "genre": "",
-          "subGenre": "",
-          
-          "youtube": "",
-          "spotify": ""
-        }
-    ]
+  "songs": [
+    {
+      "id": 1,
+      "name": "Cheek to Cheek",
+      "artist": "Tony Bennett and Lady Gaga",
+      "album": "Cheek to Cheek",
+      "genre": "Jazz",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://upload.wikimedia.org/wikipedia/en/e/e3/Tony_Bennett_and_Lady_Gaga_-_Cheek_to_Cheek.png",
+      "youtube": "https://www.youtube.com/watch?v=G46O8YiLHXI",
+      "spotify": "https://open.spotify.com/track/0UuRIovHyU6KeTzY4gS0L2?si=0847fcd047a14063"
+    },
+    {
+      "id": 2,
+      "name": "Fever",
+      "artist": "Peggy Lee",
+      "album": "Things are Swingin'",
+      "genre": "Jazz",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://m.media-amazon.com/images/I/71LHmKpohxL._SS500_.jpg",
+      "youtube": "https://www.youtube.com/watch?v=REryc1TpeY8",
+      "spotify": "https://open.spotify.com/track/3aPlQWU07jGgyHaBHVS5TS?si=8d2db650cc4140d8"
+    },
+    {
+      "id": 3,
+      "name": "Blackbear",
+      "artist": "Whitechapel",
+      "album": "The Valley",
+      "genre": "Metal",
+      "subGenre": "Deathcore",
+      "favorite": false,
+      "albumPic": "https://m.media-amazon.com/images/I/71zRyp9l0aL._SL1200_.jpg",
+      "youtube": "https://www.youtube.com/watch?v=X7pvYfWD1P0",
+      "spotify": "https://open.spotify.com/track/1K2AsxGzMyms8ft8m62jVd"
+    },
+    {
+      "id": 4,
+      "name": "27",
+      "artist": "Make Them Suffer",
+      "album": "Single Track",
+      "genre": "Metal",
+      "subGenre": "Melodic Deathcore",
+      "favorite": false,
+      "albumPic": "https://images.genius.com/1fba2ad360e5d7b72ed77bcd8324049a.640x640x1.jpg",
+      "youtube": "https://www.youtube.com/watch?v=by2p155voaU",
+      "spotify": "https://open.spotify.com/track/3a4vinxBf5uT8Sb8wCoFz9?si=cbb930b98aa146e6"
+    },
+    {
+      "id": 5,
+      "name": "Captain Crash & The Beauty Queen From Mars",
+      "artist": "Bon Jovi",
+      "album": "Crush",
+      "genre": "Oldies",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://i.discogs.com/-sbzgk-NNKIOQTX04Rj87YnETmQOFUS7Yw5loP8Gjg4/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDY4/NDY4LTE1MDMyMzg3/ODEtMzc0NC5wbmc.jpeg",
+      "youtube": "https://www.youtube.com/watch?v=Yk6HWa4opnQ",
+      "spotify": "https://open.spotify.com/track/2svCszTLVUf8K6woN74Svl?si=ee48d7752616491e"
+    },
+    {
+      "id": 6,
+      "name": "Lovin', Touchin', Squeezin'",
+      "artist": "Journey",
+      "album": "Evolution",
+      "genre": "Oldies",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PEAaTRKU-x2jFid4qbnBpXXl6xDMx_lhuA&usqp=CAU",
+      "youtube": "https://www.youtube.com/watch?v=fTkHFQC3wow",
+      "spotify": "https://open.spotify.com/track/0VQ0n5gMgJLNixG8BfWBT5?si=28469750ae0a498a"
+    },
+    {
+      "id": 7,
+      "name": "A Day Off",
+      "artist": "Nishnu",
+      "album": "DAYDREAMING",
+      "genre": "LoFi",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://i.scdn.co/image/ab67616d0000b273c1b158e04750ee3956e20854",
+      "youtube": "",
+      "spotify": "https://open.spotify.com/track/51FLSS3BNosbOEtz5tst6f?si=e2305628dd16413d"
+    },
+    {
+      "id": 8,
+      "name": "Evergarden",
+      "artist": "Osaki",
+      "album": "Evergarden",
+      "genre": "LoFi",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://f4.bcbits.com/img/a2764338842_10.jpg",
+      "youtube": "https://www.youtube.com/watch?v=d7L-clHMr40",
+      "spotify": "https://open.spotify.com/track/67F80H5WZRteT0DNj5VcDO?si=f63a03584d834a53"
+    },
+    {
+      "id": 9,
+      "name": "Yo Perreo Sola",
+      "artist": "Bad Bunny",
+      "album": "YHLQMDLG",
+      "genre": "Reggaeton",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://media.pitchfork.com/photos/5e5d895d19382e0008724f89/1:1/w_320,c_limit/YHLQMDLG_Bad%20Bunny.jpg",
+      "youtube": "https://www.youtube.com/watch?v=GtSRKwDCaZM",
+      "spotify": "https://open.spotify.com/track/0SqqAgdovOE24BzxIClpjw?si=d96dca84e6a549ac"
+    },
+    {
+      "id": 10,
+      "name": "Calma - Remix",
+      "artist": "Pedro Capó and Farruko",
+      "album": "Calma - Remix",
+      "genre": "Reggaeton",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://i.discogs.com/zGjA5So1WClZ99G0f3SxZYbART8zodR48YV8QsW2XLA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjI3/NTQ4LTE1NTc4MjE4/MzMtNTM3MC5qcGVn.jpeg",
+      "youtube": "https://www.youtube.com/watch?v=1_zgKRBrT0Y",
+      "spotify": "https://open.spotify.com/track/5iwz1NiezX7WWjnCgY5TH4?si=96451e3295024945"
+    },
+    {
+      "id": 11,
+      "name": "Bailando por Ahi",
+      "artist": "Juan Magán",
+      "album": "The King of Dance",
+      "genre": "Reggaeton",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://i.scdn.co/image/ab67616d0000b2734fd9adda79bc5839feca9720",
+      "youtube": "https://www.youtube.com/watch?v=9m6ogS57sc8",
+      "spotify": "https://open.spotify.com/track/6sHBvzRsuGunQTfCk18KXi?si=e8b0461713de4e07"
+    },
+    {
+      "id": 12,
+      "name": "Me Porto Bonito",
+      "artist": "Bad Bunny",
+      "album": "Un Verano Sin Ti",
+      "genre": "Reggaeton",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://www.billboard.com/wp-content/uploads/2022/05/bad-bunny-cover-art-2022-billboard-1240.jpg?w=1024",
+      "youtube": "https://www.youtube.com/watch?v=saGYMhApaH8",
+      "spotify": "https://open.spotify.com/track/6Sq7ltF9Qa7SNFBsV5Cogx?si=1ad221646ee445f7"
+    },
+    {
+      "name": "No Role Modelz",
+      "artist": "J. Cole",
+      "album": "2014 Forest Hills Drive",
+      "genre": "Rap",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://m.media-amazon.com/images/I/71v0b7YG+zL._SL1500_.jpg",
+      "youtube": "https://www.youtube.com/watch?v=0EnRK5YvBwU",
+      "spotify": "https://open.spotify.com/track/62vpWI1CHwFy7tMIcSStl8?si=a3f6131baea14379",
+      "id": 13
+    },
+    {
+      "name": "I And Love And You",
+      "artist": "The Avett Brothers",
+      "album": "I And Love And You",
+      "genre": "Indie",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://media.pitchfork.com/photos/5929a6405e6ef95969320cbc/1:1/w_600/8cac9e6c.jpg",
+      "youtube": "https://www.youtube.com/watch?v=T0eSpAgqrWo",
+      "spotify": "https://open.spotify.com/track/7CEV9VwA8XO9wwxTXgYKvY?si=8b628c9a0bc54a15",
+      "id": 14
+    },
+    {
+      "name": "One Armed Scissor",
+      "artist": "At the Drive-In",
+      "album": "Relationship of Command",
+      "genre": "Rock",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://upload.wikimedia.org/wikipedia/en/4/46/At_the_Drive-In_-_Relationship_of_Command_cover.jpg",
+      "youtube": "https://www.youtube.com/watch?v=7NYbojdoAQE",
+      "spotify": "https://open.spotify.com/track/1lg8iruuIfdRL20TMmHRzJ?si=050257ab83ad4353",
+      "id": 15
+    },
+    {
+      "name": "Apollo",
+      "artist": "Crystal Lake",
+      "album": "Helix",
+      "genre": "Metal",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://upload.wikimedia.org/wikipedia/en/0/04/CrystalLakeHelix.jpg",
+      "youtube": "https://www.youtube.com/watch?v=jX8RTjUUcLE",
+      "spotify": "https://open.spotify.com/track/6qZthmNcaK0jlrkMZ3khmy?si=47992491c6c44813",
+      "id": 16
+    },
+    {
+      "name": "Für Elise",
+      "artist": "Beethoven",
+      "album": "",
+      "genre": "Classical",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://m.media-amazon.com/images/I/71TJHr9h7iL._SS500_.jpg",
+      "youtube": "https://www.youtube.com/watch?v=wfF0zHeU3Zs",
+      "spotify": "https://open.spotify.com/track/0dQZmVKzYF3F9W64ESs8h4?si=5f5dfde941c54514",
+      "id": 17
+    }
+  ]
 }
