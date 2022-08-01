@@ -54,9 +54,7 @@ function App() {
   {
     setSongs(songs=>{return[...songs, newSong]})
   }
-
-  //https://api.discogs.com/releases
-
+  
   useEffect(() => {
     fetch("http://localhost:4000/songs")
       .then((res) => res.json())

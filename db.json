@@ -259,7 +259,7 @@
       "genre": "Oldies",
       "subGenre": "",
       "favorite": false,
-      "albumPic": "https://cdn.mos.cms.futurecdn.net/EotF2LMByh4G6Abw2snvBZ.jpg",
+      "albumPic": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
       "youtube": "https://www.youtube.com/watch?v=Y3ywicffOj4",
       "spotify": "https://open.spotify.com/track/0ofHAoxe9vBkTCp2UQIavz?si=3c6c3714504f44b1",
       "id": 22
@@ -490,6 +490,18 @@
       "youtube": "https://www.youtube.com/watch?v=gbWOgBKN1uA",
       "spotify": "https://open.spotify.com/track/6yWn9RKfL1il1b4hFe6H1i?autoplay=true",
       "id": 41
+    },
+    {
+      "name": "Cream Of The Crop",
+      "artist": "Dance Gavin Dance",
+      "album": "Jackpot Juicer",
+      "genre": "Metal",
+      "subGenre": "Post-Hardcore",
+      "favorite": false,
+      "albumPic": "https://img.techplanet.today/800x,jpeg/https://techplanet.today/storage/posts/2022/07/24/69/hWlpaYhfiwqQ9xJhtEDaWFQTuvTp2UmguzzHWOLN.png",
+      "youtube": "https://www.youtube.com/watch?v=_0PT8MnVGqw",
+      "spotify": "https://open.spotify.com/track/0LpZy8WZPTtyHHzqlsYjDq?si=23b8311dce984bb9",
+      "id": 42
     }
   ]
 }

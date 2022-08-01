@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/swirl_pattern.png");
+  text-align: center;
 }
 
 code {
@@ -122,6 +123,8 @@ form{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: space-around;
+  -webkit-jusitfy-content: space-around;
   flex-direction: row;
   -webkit-flex-direction: row;
   flex-wrap: wrap;
@@ -232,8 +235,8 @@ form{
 .nav-bar .sidebar{
   list-style: none;
   position: fixed;
-  height: 100%;
-  width: 250px;
+  height: 50%;
+  width: 200px;
   padding: 10px;
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -243,9 +246,7 @@ form{
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  padding: 5px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-top: 1px solid rgba(0,0,0,0.05);
+  /* padding: 5px; */
 }
 
 .nav-bar .sidebar ul li a{
@@ -253,7 +254,7 @@ form{
 }
 
 .nav-bar .sidebar ul li:hover{
-background: #222;
+  background: #222;
 }
 
 .holder{
@@ -267,10 +268,9 @@ background: #222;
   margin-left: 300px;
 }
 
-
 .navbutton {
   padding: 0.3em 0.3em;
-  margin: 10px;
+  /* margin: 5px; */
   border: none;
   outline: none;
   color: rgb(255, 255, 255);

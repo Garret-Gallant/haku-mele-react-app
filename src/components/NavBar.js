@@ -23,7 +23,7 @@ function NavBar( { setSearchQuery } ) {
         </ul>
         <ul>
           <NavLink className='navbutton' to="/random-song">
-            Random Song Generator
+            Random Song
           </NavLink>
         </ul>
         <ul>
