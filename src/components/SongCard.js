@@ -1,8 +1,5 @@
 import React from "react";
 import {useState} from 'react';
-import { Route } from "react-router-dom";
-import Favorites from "./Favorites";
-import { SemanticICONS } from "semantic-ui-react";
 
 function SongCard({ handleFavoriteSong, song }) {
   const {
@@ -65,9 +62,9 @@ function SongCard({ handleFavoriteSong, song }) {
           Spotify
         </a>
         {favorite ? (
-          <button onClick={flipFavorite} className="button">★</button>
+          <button onClick={flipFavorite} className="fav-button">★</button>
         ) : (
-          <button onClick={flipFavorite} className="button">☆</button>
+          <button onClick={flipFavorite} className="fav-button">☆</button>
         )}
       </div>
     </div>

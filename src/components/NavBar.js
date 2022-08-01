@@ -8,6 +8,7 @@ function NavBar( { setSearchQuery } ) {
       <NavLink to="/">
         <img id="logo" src={require("../images/logo.png")} alt="Logo" height="150" />
       </NavLink>
+      <input onChange={((e) => setSearchQuery(e.target.value))} className='button' type='text' placeholder='Search a song' />
       <NavLink className='button' to="/">
         All Songs
       </NavLink>
@@ -23,7 +24,6 @@ function NavBar( { setSearchQuery } ) {
       <NavLink className='button' to="/about">
         About
       </NavLink>
-      <input onChange={((e) => setSearchQuery(e.target.value))} className='button' type='text' placeholder='Search a song' />
     </div>
   );
 }

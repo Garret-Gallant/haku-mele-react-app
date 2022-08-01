@@ -52,16 +52,26 @@ function SongForm({formData, setFormData, addSong})
 
   return (
     <div>
-      <Form class="ui fluid form">
-        <Form.Group widths="equal" class="field">
+      {/* <h4>Add a song!<h4> */}
+      <Form className="ui fluid form">
+        <h1>Add a Song</h1>
+        <Form.Group widths="equal">
           <Form.Input label="Song Name" name="name" value={name} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Artist" name="artist" value={artist} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Album" name="album" value={album} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Genre" name="genre" value={genre} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Sub-Genre (leave blank if unknown)" name="subGenre" value={subGenre} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Album Image URL" name="albumPic" value={albumPic} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Youtube Link" name="youtube" value={youtube} onChange={handleChange}/>
+          <br></br>
           <Form.Input label="Spotify Link" name="spotify" value={spotify} onChange={handleChange}/>
+          <br></br>
         </Form.Group>
         <Form.Button onClick={handleSubmit}>Submit</Form.Button>
       </Form>

@@ -4,6 +4,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/swirl_pattern.png");
 }
 
 code {
@@ -97,6 +98,7 @@ form{
   text-align: center;
   padding: 30px;
   margin: 10px 0;
+  background-color: #fff;
 }
 
 .cards {
@@ -153,33 +155,70 @@ h1 {
   margin-top: 2%;
 }
 
-.emoji-button {
+.fav-button {
+  padding: 0.6em 2em;
   border: none;
-  size-adjust: inherit;
-  background: none;
-  padding: 0 0.25rem;
+  outline: none;
+  color: rgb(0, 0, 0);
   cursor: pointer;
-  position:relative;
-  left: 50%;
-  top: 20px;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
 }
 
-.emoji-button.favorite {
-  color: transparent;
-  text-shadow: 0 0 0 gray;
+.fav-button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
-.emoji-button.favorite.active,
-.emoji-button.favorite:hover {
-  text-shadow: 0 0 0 gold;
-  cursor: pointer;
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
-.emoji-button.delete:hover {
-  text-shadow: 0 0 0 firebrick;
-  cursor: pointer;
+.fav-button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
-
-
 
 

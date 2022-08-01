@@ -8,8 +8,8 @@ import Favorites from './Favorites';
 import About from "./About";
 
 //Goals
-//get random render function for a single card
-//like function => favorites page
+//get random render function for a single cards
+//sort by genre, album, artist, name, etc.
 
 //Stretch Goals
 //Add user auth
