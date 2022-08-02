@@ -10,6 +10,7 @@ import About from "./About";
 //Goals
 //get random render function for a single cards
 //sort by genre, album, artist, name, etc.
+//make it look pretty
 
 //Stretch Goals
 //Add user auth
@@ -30,6 +31,43 @@ function App() {
   });
 
   const [songs, setSongs] = useState([]);
+
+  const [randomSong, setRandomSong]=useState([]);
+
+  function getRandomSong(){
+    setRandomSong(songs[Math.floor(Math.random() * songs.length)]);
+  }
+
+  const [sortBy, setSortBy] =useState("");
+  // const sortResults= songs.sort((currentSong, nextSong)=>{
+  //   if(sortBy="")
+  //   {
+  //     return songs
+  //   }
+  //   else
+  //   { 
+  //     if(sortBy==="genre")
+  //     {
+  //        if(currentSong.genre < nextSong.genre)
+  //        {return -1}
+  //        else
+  //        {return 1}        
+  //     }
+  //     if(sortBy==="artist")
+  //     {
+
+  //     }
+  //     if(sortBy==="name")
+  //     {
+
+  //     }
+  //     if(sortBy==="album")
+  //     {
+
+  //     }
+  //   }
+  // })
+
   const [searchQuery, setSearchQuery] = useState("");
   const searchResults = songs.filter(
     (song) =>
@@ -63,7 +101,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar setSearchQuery={setSearchQuery}/>
+      <NavBar setSearchQuery={setSearchQuery} setSortBy={setSortBy}/>
       <Route exact path="/">
         <SongCollection
           songs={searchResults}
@@ -76,7 +114,7 @@ function App() {
         <SongForm formData={formData} setFormData={setFormData} addSong={addSong} />
       </Route>
       <Route path="/random-song">
-        <RandomSong songs={songs} handleFavoriteSong={handleFavoriteSong} />
+        <RandomSong song={randomSong} getRandomSong={getRandomSong}/>
       </Route>
       <Route path="/favorites">
           <Favorites songs={songs} setSongs={setSongs} />

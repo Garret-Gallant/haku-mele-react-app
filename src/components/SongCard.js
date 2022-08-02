@@ -12,12 +12,10 @@ function SongCard({ handleFavoriteSong, song }) {
     albumPic,
     youtube,
     spotify,
-    favorite,
+    favorite,  
   } = song;
 
 
-//wait a sec I think i got something
-//for the random gen?
   function flipFavorite(){
     const favoriteObj = {
         favorite: (song.favorite = !favorite),

@@ -7,7 +7,7 @@
       "album": "Cheek to Cheek",
       "genre": "Jazz",
       "subGenre": "",
-      "favorite": true,
+      "favorite": false,
       "albumPic": "https://upload.wikimedia.org/wikipedia/en/e/e3/Tony_Bennett_and_Lady_Gaga_-_Cheek_to_Cheek.png",
       "youtube": "https://www.youtube.com/watch?v=G46O8YiLHXI",
       "spotify": "https://open.spotify.com/track/0UuRIovHyU6KeTzY4gS0L2?si=0847fcd047a14063"
@@ -43,7 +43,7 @@
       "album": "Single Track",
       "genre": "Metal",
       "subGenre": "Melodic Deathcore",
-      "favorite": true,
+      "favorite": false,
       "albumPic": "https://images.genius.com/1fba2ad360e5d7b72ed77bcd8324049a.640x640x1.jpg",
       "youtube": "https://www.youtube.com/watch?v=by2p155voaU",
       "spotify": "https://open.spotify.com/track/3a4vinxBf5uT8Sb8wCoFz9?si=cbb930b98aa146e6"
@@ -55,7 +55,7 @@
       "album": "Crush",
       "genre": "Oldies",
       "subGenre": "",
-      "favorite": true,
+      "favorite": false,
       "albumPic": "https://i.discogs.com/-sbzgk-NNKIOQTX04Rj87YnETmQOFUS7Yw5loP8Gjg4/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDY4/NDY4LTE1MDMyMzg3/ODEtMzc0NC5wbmc.jpeg",
       "youtube": "https://www.youtube.com/watch?v=Yk6HWa4opnQ",
       "spotify": "https://open.spotify.com/track/2svCszTLVUf8K6woN74Svl?si=ee48d7752616491e"
@@ -79,7 +79,7 @@
       "album": "DAYDREAMING",
       "genre": "LoFi",
       "subGenre": "",
-      "favorite": false,
+      "favorite": true,
       "albumPic": "https://i.scdn.co/image/ab67616d0000b273c1b158e04750ee3956e20854",
       "youtube": "",
       "spotify": "https://open.spotify.com/track/51FLSS3BNosbOEtz5tst6f?si=e2305628dd16413d"
@@ -103,7 +103,7 @@
       "album": "YHLQMDLG",
       "genre": "Reggaeton",
       "subGenre": "",
-      "favorite": true,
+      "favorite": false,
       "albumPic": "https://media.pitchfork.com/photos/5e5d895d19382e0008724f89/1:1/w_320,c_limit/YHLQMDLG_Bad%20Bunny.jpg",
       "youtube": "https://www.youtube.com/watch?v=GtSRKwDCaZM",
       "spotify": "https://open.spotify.com/track/0SqqAgdovOE24BzxIClpjw?si=d96dca84e6a549ac"
@@ -210,7 +210,7 @@
       "album": "At Last!",
       "genre": "Jazz",
       "subGenre": "",
-      "favorite": false,
+      "favorite": true,
       "albumPic": "https://upload.wikimedia.org/wikipedia/en/f/fd/At_Last_-_Etta_James.jpg",
       "youtube": "https://www.youtube.com/watch?v=1qJU8G7gR_g",
       "spotify": "https://open.spotify.com/track/4Hhv2vrOTy89HFRcjU3QOx?si=1a898601556e4057",
