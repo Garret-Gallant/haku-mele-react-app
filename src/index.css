@@ -86,6 +86,15 @@ form{
   border-radius: 10px;
 }
 
+.random-card {
+  position:absolute;
+  left: 42%;
+  width:100%;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
 .card {
   left: 38%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -235,26 +244,26 @@ form{
 .nav-bar .sidebar{
   list-style: none;
   position: fixed;
-  height: 50%;
-  width: 200px;
+  width: 250px;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.nav-bar .sidebar ul li{
+.nav-bar .sidebar li ul{
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  transition: transform .1s;
   /* padding: 5px; */
 }
 
-.nav-bar .sidebar ul li a{
+.nav-bar .sidebar li ul a{
   display: block;
+  left: -10%
 }
 
-.nav-bar .sidebar ul li:hover{
-  background: #222;
+.nav-bar .sidebar li ul:hover{
+  transform: scale(1.02);
 }
 
 .holder{
@@ -336,3 +345,5 @@ form{
   top: 0;
   border-radius: 10px;
 }
+
+

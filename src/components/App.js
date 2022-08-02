@@ -29,46 +29,56 @@ function App() {
     youtube: "",
     spotify: "",
   });
-
   const [songs, setSongs] = useState([]);
-
   const [randomSong, setRandomSong]=useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   function getRandomSong(){
     setRandomSong(songs[Math.floor(Math.random() * songs.length)]);
   }
+  
+  // let sortResults=[];
 
-  const [sortBy, setSortBy] =useState("");
-  // const sortResults= songs.sort((currentSong, nextSong)=>{
+  // const [sortBy, setSortBy] = useState("");
+
+  // const sortStuff = ()=>
+  // {
   //   if(sortBy="")
   //   {
-  //     return songs
+  //     return searchResults
   //   }
   //   else
   //   { 
-  //     if(sortBy==="genre")
-  //     {
-  //        if(currentSong.genre < nextSong.genre)
-  //        {return -1}
-  //        else
-  //        {return 1}        
-  //     }
-  //     if(sortBy==="artist")
-  //     {
-
-  //     }
-  //     if(sortBy==="name")
-  //     {
-
-  //     }
-  //     if(sortBy==="album")
-  //     {
-
-  //     }
+  //     sortResults = searchResults.sort((currentSong, nextSong) => currentSong.sortBy > nextSong.sortBy ? 1 : -1)
+  //     console.log(sortResults)
   //   }
-  // })
+  // }
+  
+  function sortDefault() {
+    const originalSongs = [...songs].sort((song, nextSong) => song.id - nextSong.id)
+    setSongs(originalSongs);
+  }
 
-  const [searchQuery, setSearchQuery] = useState("");
+  function sortByGenre() {
+    const songsByGenre = [...songs].sort((song, nextSong) => nextSong.genre < song.genre ? 1 : -1)
+    setSongs(songsByGenre);
+  }
+
+  // function sortByArtist() {
+  //   const songsByArtist = [...songs].sort((a, b) => b.artist - a.artist ? 1 : -1);
+  //   setSongs(songsByArtist);
+  // }
+
+  // function sortByAlbum() {
+  //   const songsByAlbum = [...songs].sort((a, b) => b.album - a.album ? 1 : -1);
+  //   setSongs(songsByAlbum);
+  // }
+
+  // function sortByName() {
+  //   const songsByName = [...songs].sort((a, b) => b.name - a.name ? 1 : -1);
+  //   setSongs(songsByName);
+  // }
+
   const searchResults = songs.filter(
     (song) =>
       song.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -101,7 +111,12 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar setSearchQuery={setSearchQuery} setSortBy={setSortBy}/>
+      <NavBar 
+      setSearchQuery={setSearchQuery} 
+      sortByGenre={sortByGenre} 
+      sortDefault={sortDefault}
+      /* setSortBy={setSortBy} */ 
+      />
       <Route exact path="/">
         <SongCollection
           songs={searchResults}

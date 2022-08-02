@@ -1,24 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar( { setSearchQuery, setSortBy } ) {
+function NavBar( { sortByGenre, setSearchQuery, sortDefault /*setSortBy*/} ) {
+
+  const [checkbox, setCheckbox] = useState(false);
+
+  function toggleCheckbox() {
+    setCheckbox((checkbox) => !checkbox)
+  }
 
   return (
     <div className='nav-bar'>
       <div className="sidebar">
         <NavLink to="/">
-          <img id="logo" src={require("../images/logo.png")} alt="Logo" height="100" />
+          <img id="logo" src={require("../images/logo.png")} alt="Logo" height="125" />
         </NavLink>
           <input onChange={((e) => setSearchQuery(e.target.value))} className='button' type='text' placeholder='Search a song' />
        <div className="sort-inputs">
-          <label>Sort By: </label>
-          <select name="Sortby" defaultValue = "" onChange={(e)=> setSortBy(e.target.value)}>
-              <option value="">Default</option>
-              <option value="genre">Genre</option>
+          <label>Sort By Genre? </label>
+          <input type='checkbox' onChange={toggleCheckbox} onClick={checkbox ? sortDefault : sortByGenre} /* name="Sortby" defaultValue = "" onChange={(e)=> {setSortBy(e.target.value)}} */>
+              {/* <option value="">Default</option>
+              <option onChange={sortByGenre} value="genre">Genre</option>
               <option value="artist">Artist</option>
-              <option value="name">Song</option>
-              <option value="album">Album</option>
-          </select>
+              <option value="name">Name</option>
+              <option value="album">Album</option> */}
+          </input>
           </div>
         <li>
         <ul>

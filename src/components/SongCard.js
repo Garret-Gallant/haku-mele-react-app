@@ -4,15 +4,15 @@ import {useState} from 'react';
 function SongCard({ handleFavoriteSong, song }) {
   const {
     id,
-    name,
-    artist,
-    album,
-    genre,
-    subGenre,
-    albumPic,
-    youtube,
-    spotify,
-    favorite,  
+    name = 'Random Name',
+    artist = 'Randomized!',
+    album = 'Randomized!',
+    genre = 'Randomized!',
+    subGenre = 'Randomized!',
+    albumPic = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/800px-Question_mark_%28black%29.svg.png',
+    youtube = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    spotify = 'https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si=74eb29924d1a4ac7',
+    favorite = false,  
   } = song;
 
 
