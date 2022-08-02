@@ -41,7 +41,7 @@ function SongCard({ handleFavoriteSong, song }) {
           position="relative"
           height="350"
           width="350"
-          src={albumPic ? albumPic : require("../images/noImage.jpeg")}
+          src={albumPic ? albumPic : require("../Assets/noImage.jpeg")}
           alt={album}
         />
       </div>

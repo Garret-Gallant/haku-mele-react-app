@@ -36,33 +36,33 @@ function App() {
     setRandomSong(songs[Math.floor(Math.random() * songs.length)]);
   }
 
-  //SORTING WORKS I STG I AM NEVER DOING THAT SHIT AGAIN!
+  //SORTING WORKS I STG I AM NEVER DOING THAT SHIT AGAIN! <-- Absolutely love this comment Karter great job on the sort -G !!!
   function sortSongs(fSort)
   {
-    if(fSort ==="default")
+    if(fSort === "default")
     {
-      const originalSongs = [...songs].sort((song, nextSong) => song.id - nextSong.id)
+      const originalSongs = [...songs].sort((song, nextSong) => nextSong.id < song.id ? 1 : -1)
       setSongs(originalSongs);
     }
-    if(fSort ==="genre")
+    if(fSort === "genre")
     {
       const songsByGenre = [...songs].sort((song, nextSong) => nextSong.genre < song.genre ? 1 : -1)
       setSongs(songsByGenre);
     }
-    if(fSort ==="artist")
+    if(fSort === "artist")
     {
       const songsByArtist = [...songs].sort((song, nextSong) => nextSong.artist < song.artist ? 1 : -1)
       setSongs(songsByArtist);
     }
-    if(fSort ==="album")
+    if(fSort === "album")
     {
       const songsByAlbum = [...songs].sort((song, nextSong) => nextSong.album < song.album ? 1 : -1)
       setSongs(songsByAlbum);
     }
-    if(fSort ==="name")
+    if(fSort === "name")
     {
-      const songsByName = [...songs].sort((song, nextSong) => nextSong.name < song.name ? 1 : -1)
-      setSongs(songsByName);
+      const originalSongs = [...songs].sort((song, nextSong) => nextSong.name < song.name ? 1 : -1)
+      setSongs(originalSongs);
     }
   }
 
@@ -102,8 +102,6 @@ function App() {
       setSearchQuery={setSearchQuery} 
       setSortBy={setSortBy}
       sortBy={sortBy}
-      // sortByGenre={sortByGenre} 
-      // sortDefault={sortDefault}
       sortSongs={sortSongs}
       />
       <Route exact path="/">
@@ -112,6 +110,10 @@ function App() {
           setSongs={setSongs}
           onChange={handleSearch}
           handleFavoriteSong={handleFavoriteSong}
+          setSearchQuery={setSearchQuery} 
+          setSortBy={setSortBy}
+          sortBy={sortBy}
+          sortSongs={sortSongs}
         />
       </Route>
       <Route path="/add-song">

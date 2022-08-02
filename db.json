@@ -646,6 +646,18 @@
       "youtube": "https://www.youtube.com/watch?v=IBLruNfUqUs",
       "spotify": "https://open.spotify.com/track/3fqwjXwUGN6vbzIwvyFMhx?autoplay=true",
       "id": 54
+    },
+    {
+      "name": "Springsteen",
+      "artist": "Eric Church",
+      "album": "Chief",
+      "genre": "Country",
+      "subGenre": "",
+      "favorite": false,
+      "albumPic": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Eric_Church_Chief.jpg/220px-Eric_Church_Chief.jpg",
+      "youtube": "https://www.youtube.com/watch?v=l2gGXlW6wSY",
+      "spotify": "https://open.spotify.com/track/05ZACkzW8YbRq3eFgIfSNB?autoplay=true",
+      "id": 55
     }
   ]
 }
