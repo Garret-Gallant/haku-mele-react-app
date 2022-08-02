@@ -8,9 +8,7 @@ import Favorites from './Favorites';
 import About from "./About";
 
 //Goals
-//get random render function for a single cards
-//sort by genre, album, artist, name, etc.
-//make it look pretty
+//We've met all primary goals!!! 🎊
 
 //Stretch Goals
 //Add user auth
@@ -32,52 +30,41 @@ function App() {
   const [songs, setSongs] = useState([]);
   const [randomSong, setRandomSong]=useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy]= useState("default")
 
   function getRandomSong(){
     setRandomSong(songs[Math.floor(Math.random() * songs.length)]);
   }
-  
-  // let sortResults=[];
 
-  // const [sortBy, setSortBy] = useState("");
-
-  // const sortStuff = ()=>
-  // {
-  //   if(sortBy="")
-  //   {
-  //     return searchResults
-  //   }
-  //   else
-  //   { 
-  //     sortResults = searchResults.sort((currentSong, nextSong) => currentSong.sortBy > nextSong.sortBy ? 1 : -1)
-  //     console.log(sortResults)
-  //   }
-  // }
-  
-  function sortDefault() {
-    const originalSongs = [...songs].sort((song, nextSong) => song.id - nextSong.id)
-    setSongs(originalSongs);
+  //SORTING WORKS I STG I AM NEVER DOING THAT SHIT AGAIN!
+  function sortSongs(fSort)
+  {
+    if(fSort ==="default")
+    {
+      const originalSongs = [...songs].sort((song, nextSong) => song.id - nextSong.id)
+      setSongs(originalSongs);
+    }
+    if(fSort ==="genre")
+    {
+      const songsByGenre = [...songs].sort((song, nextSong) => nextSong.genre < song.genre ? 1 : -1)
+      setSongs(songsByGenre);
+    }
+    if(fSort ==="artist")
+    {
+      const songsByArtist = [...songs].sort((song, nextSong) => nextSong.artist < song.artist ? 1 : -1)
+      setSongs(songsByArtist);
+    }
+    if(fSort ==="album")
+    {
+      const songsByAlbum = [...songs].sort((song, nextSong) => nextSong.album < song.album ? 1 : -1)
+      setSongs(songsByAlbum);
+    }
+    if(fSort ==="name")
+    {
+      const songsByName = [...songs].sort((song, nextSong) => nextSong.name < song.name ? 1 : -1)
+      setSongs(songsByName);
+    }
   }
-
-  function sortByGenre() {
-    const songsByGenre = [...songs].sort((song, nextSong) => nextSong.genre < song.genre ? 1 : -1)
-    setSongs(songsByGenre);
-  }
-
-  // function sortByArtist() {
-  //   const songsByArtist = [...songs].sort((a, b) => b.artist - a.artist ? 1 : -1);
-  //   setSongs(songsByArtist);
-  // }
-
-  // function sortByAlbum() {
-  //   const songsByAlbum = [...songs].sort((a, b) => b.album - a.album ? 1 : -1);
-  //   setSongs(songsByAlbum);
-  // }
-
-  // function sortByName() {
-  //   const songsByName = [...songs].sort((a, b) => b.name - a.name ? 1 : -1);
-  //   setSongs(songsByName);
-  // }
 
   const searchResults = songs.filter(
     (song) =>
@@ -113,9 +100,11 @@ function App() {
     <div className="App">
       <NavBar 
       setSearchQuery={setSearchQuery} 
-      sortByGenre={sortByGenre} 
-      sortDefault={sortDefault}
-      /* setSortBy={setSortBy} */ 
+      setSortBy={setSortBy}
+      sortBy={sortBy}
+      // sortByGenre={sortByGenre} 
+      // sortDefault={sortDefault}
+      sortSongs={sortSongs}
       />
       <Route exact path="/">
         <SongCollection
