@@ -3,7 +3,7 @@ import SongCard from "./SongCard";
 
 
 function SongCollection({ setSearchQuery, sortSongs, sortBy, setSortBy, handleFavoriteSong, songs }) {
-  
+
   function handleChange(e)
   {
     let fSort= e;

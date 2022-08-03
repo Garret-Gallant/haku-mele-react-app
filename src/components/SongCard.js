@@ -3,10 +3,10 @@ import React from "react";
 function SongCard({ handleFavoriteSong, song }) {
   const {
     id,
-    name = 'Random Name',
-    artist = 'Random',
-    album = 'Random',
-    genre = 'Random',
+    name = '???',
+    artist = '???',
+    album = '???',
+    genre = '???',
     albumPic = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/800px-Question_mark_%28black%29.svg.png',
     youtube = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     spotify = 'https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si=74eb29924d1a4ac7',

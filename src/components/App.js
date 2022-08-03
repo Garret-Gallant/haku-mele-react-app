@@ -54,8 +54,8 @@ function App() {
     }
     if(fSort === "name")
     {
-      const originalSongs = [...songs].sort((song, nextSong) => nextSong.name < song.name ? 1 : -1)
-      setSongs(originalSongs);
+      const songsByName = [...songs].sort((song, nextSong) => nextSong.name < song.name ? 1 : -1)
+      setSongs(songsByName);
     }
   }
 
