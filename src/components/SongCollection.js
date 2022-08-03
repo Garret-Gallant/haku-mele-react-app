@@ -2,7 +2,7 @@ import React from "react";
 import SongCard from "./SongCard";
 
 
-function SongCollection({ setSearchQuery, sortSongs, sortBy, setSortBy, handleFavoriteSong, songs}) {
+function SongCollection({ setSearchQuery, sortSongs, sortBy, setSortBy, handleFavoriteSong, songs }) {
   
   function handleChange(e)
   {
@@ -14,9 +14,9 @@ function SongCollection({ setSearchQuery, sortSongs, sortBy, setSortBy, handleFa
   return (
   
     <div className="holder">
-    <input onChange={((e) => {setSearchQuery(e.target.value)})} className='search-form' type='text' placeholder='Search a song' /* only show on homepage */ />
+    <input onChange={((e) => {setSearchQuery(e.target.value)})} className='search-form' type='text' placeholder='Search Songs' /* only show on homepage */ />
     <br></br>
-          <label className='sort-text'>Sort By: </label>
+          <label className='sort-text'>Sort By : </label>
           <select className='drop-down' name="Sortby" value={sortBy} onChange={(e)=> handleChange(e.target.value)}>
               <option value="default">Default</option>
               <option value="genre">Genre</option>

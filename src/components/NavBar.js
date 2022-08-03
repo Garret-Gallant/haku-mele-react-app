@@ -1,14 +1,7 @@
 import React, {useEffect} from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar({  setSearchQuery, sortSongs, sortBy, setSortBy }) {
-
-  function handleChange(e)
-  {
-    let fSort= e;
-    setSortBy(fSort);
-    sortSongs(fSort);
-  }
+function NavBar({  }) {
 
   return (
     <div className='nav-bar'>

@@ -6,13 +6,6 @@ import RandomSong from "./RandomSong";
 import SongCollection from "./SongCollection";
 import Favorites from './Favorites';
 import About from "./About";
-
-//Goals
-//We've met all primary goals!!! 🎊
-
-//Stretch Goals
-//Add user auth
-//Add Delete button which works w/ correct password ONLY
 //👍
 
 function App() {
@@ -27,6 +20,7 @@ function App() {
     youtube: "",
     spotify: "",
   });
+  
   const [songs, setSongs] = useState([]);
   const [randomSong, setRandomSong]=useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,7 +30,6 @@ function App() {
     setRandomSong(songs[Math.floor(Math.random() * songs.length)]);
   }
 
-  //SORTING WORKS I STG I AM NEVER DOING THAT SHIT AGAIN! <-- Absolutely love this comment Karter great job on the sort -G !!!
   function sortSongs(fSort)
   {
     if(fSort === "default")
@@ -120,10 +113,10 @@ function App() {
         <SongForm formData={formData} setFormData={setFormData} addSong={addSong} />
       </Route>
       <Route path="/random-song">
-        <RandomSong song={randomSong} getRandomSong={getRandomSong}/>
+        <RandomSong song={randomSong} getRandomSong={getRandomSong} handleFavoriteSong={handleFavoriteSong}/>
       </Route>
       <Route path="/favorites">
-          <Favorites songs={songs} setSongs={setSongs} />
+          <Favorites songs={songs} setSongs={setSongs} handleFavoriteSong={handleFavoriteSong}/>
       </Route>
       <Route path="/about">
         <About />

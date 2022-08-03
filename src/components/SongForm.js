@@ -37,6 +37,8 @@ function SongForm({formData, setFormData, addSong})
   function handleSubmit(e)
   {
     e.preventDefault();
+    
+    <alert>Song Submitted!</alert>
 
     fetch("http://localhost:4000/songs",
     {
@@ -47,7 +49,7 @@ function SongForm({formData, setFormData, addSong})
     .then(s=>s.json())
     .then(s=>{addSong(s)})
     .then(()=>{setFormData(initialState)})
-    .then(()=>{return<alert>Song Submitted!</alert>})
+    // .then(()=>{<alert>Song Submitted!</alert>})
   }
 
   return (
@@ -64,16 +66,15 @@ function SongForm({formData, setFormData, addSong})
           <br></br>
           <Form.Input label="Genre" name="genre" value={genre} onChange={handleChange}/>
           <br></br>
-          <Form.Input label="Sub-Genre (leave blank if unknown)" name="subGenre" value={subGenre} onChange={handleChange}/>
-          <br></br>
           <Form.Input label="Album Image URL" name="albumPic" value={albumPic} onChange={handleChange}/>
           <br></br>
           <Form.Input label="Youtube Link" name="youtube" value={youtube} onChange={handleChange}/>
           <br></br>
           <Form.Input label="Spotify Link" name="spotify" value={spotify} onChange={handleChange}/>
           <br></br>
+          <br></br>
         </Form.Group>
-        <Form.Button onClick={handleSubmit}>Submit</Form.Button>
+        <button className="submit-button" onClick={handleSubmit}>ADD SONG</button>
       </Form>
     </div>
     </div>
