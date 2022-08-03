@@ -1005,7 +1005,7 @@
       "album": "Woman on the Internet",
       "genre": "Pop",
       "subGenre": "",
-      "favorite": false,
+      "favorite": true,
       "albumPic": "https://m.media-amazon.com/images/I/614OOi6PcaS._SL1200_.jpg",
       "youtube": "https://www.youtube.com/watch?v=JpZv3BV1jxE",
       "spotify": "https://open.spotify.com/track/1FLyXkdwjRfDakk4XmAFk9?autoplay=true",

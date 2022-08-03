@@ -11,7 +11,8 @@ function About() {
           <img height="350" src={require("../Assets/garret-about.jpg")} />
           <p>
             I listen to all kinds of songs in all kinds of genres, and I wanted
-            to make an app that makes it easier to find new music! Hope you like the site! 
+            to make an app that makes it easier to find new music! Hope you like
+            the site!
           </p>
         </div>
         <div className="card">
