@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar({}) {
+function NavBar() {
   return (
     <div className="nav-bar">
       <div className="sidebar">

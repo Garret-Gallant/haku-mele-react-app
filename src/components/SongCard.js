@@ -32,9 +32,6 @@ function SongCard({ handleFavoriteSong, song }) {
   return (
     <div className="card" text-align="center">
       <div className="image" text-align="center">
-        <a className="ui left corner label">
-          <i className="heart icon"></i>
-        </a>
         <img
           position="relative"
           height="350"
