@@ -89,7 +89,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:4000/songs")
+    fetch("https://haku-mele-backend.herokuapp.com/songs")
       .then((res) => res.json())
       .then((songs) => initialSort(songs));
   }, []);

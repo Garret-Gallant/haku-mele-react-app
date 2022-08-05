@@ -18,7 +18,7 @@ function SongCard({ handleFavoriteSong, song }) {
       favorite: (song.favorite = !favorite),
     };
 
-    fetch(`http://localhost:4000/songs/${id}`, {
+    fetch(`https://haku-mele-backend.herokuapp.com/songs/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
