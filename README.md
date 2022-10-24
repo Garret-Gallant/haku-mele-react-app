@@ -9,11 +9,11 @@ https://react.semantic-ui.com/
 
 User's visiting the site can do the following: 
 
--View all songs present in the database.
--Sort songs by artist, genre, name, etc.
--Add a new song to the database.
--Generate a random song from the database.
--View a page about the devs.
+- View all songs present in the database.
+- Sort songs by artist, genre, name, etc.
+- Add a new song to the database.
+- Generate a random song from the database.
+- View a page about the devs.
 
 Data format for our db: 
 ```json
