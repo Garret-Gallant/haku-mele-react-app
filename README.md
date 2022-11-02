@@ -7,6 +7,8 @@ The data base is hosted locally, and will be migrated to a seperate URL in the f
 Visual Formatting:
 https://react.semantic-ui.com/
 
+db visible at: https://haku-mele-backend.herokuapp.com/
+
 User's visiting the site can do the following: 
 
 -View all songs present in the database.

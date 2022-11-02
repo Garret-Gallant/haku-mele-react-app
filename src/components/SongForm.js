@@ -1,7 +1,6 @@
 import React from "react";
 import { Form } from "semantic-ui-react";
 
-
 function SongForm({ formData, setFormData, addSong }) {
   const { name, artist, album, genre, subGenre, albumPic, youtube, spotify } =
     formData;
@@ -38,8 +37,10 @@ function SongForm({ formData, setFormData, addSong }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert("Your new song has been added! Thank you for contributing to Haku Mele!")
-    
+    alert(
+      "Your new song has been added! Thank you for contributing to Haku Mele!"
+    );
+
     fetch("https://haku-mele-backend.herokuapp.com/songs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
